@@ -1,0 +1,100 @@
+/* CSS styling for calculator project */
+
+* {
+    /* outline: solid 2px red; */
+}
+
+body {
+    font-family: 'Playwrite GB J', Arial, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main {
+    outline: solid 2px black;
+    background-color: rgb(155, 155, 155);
+    border-radius: 20px;
+    white-space: nowrap;
+
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.display {
+    background: rgb(188, 255, 188);
+    outline: solid 2px black;
+    text-align: right;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.current-input{
+    font-size: 32px;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#sum {
+    width: calc(50% - 5px);
+}
+
+button {
+    font-family: 'Playwrite GB J', Arial, sans-serif;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: calc(25% - 7.5px);
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+    border: none;
+    border: solid 2px rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: rgb(216, 216, 216);
+    box-shadow: 0px 2px 7px rgb(48, 48, 48);
+}
+
+#clear-all {
+    background-color: rgb(255, 168, 168);
+}
+#clear-all:hover {
+    background-color: rgb(237, 157, 157);
+}
+
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2px;
+
+    background-color: rgb(234, 234, 234);
+    font-size: 28px;
+}
+
+footer {
+    font-size: 18px;
+}
